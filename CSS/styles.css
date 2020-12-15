@@ -373,5 +373,11 @@ html{scroll-behavior: smooth;}
 .otheric {
 	width: 100%;
 	height: 317px;
-	background-color: whitesmoke;
+	border-bottom: solid 2px silver;
+	background-color: white;
+}
+.footer {
+	width: 100%;
+	height: 123px;
+	background-color: white;
 }
