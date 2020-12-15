@@ -1,0 +1,364 @@
+@charset "utf-8";
+/* CSS Document */
+* {
+	margin: 0;
+	padding: 0;
+}
+html{scroll-behavior: smooth;}
+#box {
+	width: 1921px;
+	height: 4143px;
+	margin: 0 auto;
+	background-color: gray;
+}
+/*Navbar*/
+.navbar {
+	width: 100%;
+	height: 170px;
+	position: fixed;
+	z-index: 200;
+}
+
+/*Place The Logo*/
+.logobox {
+	width: 230px;
+	height: 50px;
+	float: left;
+	font-family: 'Pacifico', cursive;;
+	font-size: 38px;
+	margin: 40px 0 0 104px;
+	padding: 0 0 20px 20px;
+}
+.logobox span{color: blue}
+/*The Search Form*/
+.searchform {
+	width: 233px;
+	height: 50px;
+	float: right;
+	position: relative;
+	margin: 50px 135px 0 0;
+/*	background-color: whitesmoke;*/
+}
+.searchform input {
+	width: 205px;
+	height: 46px;
+	padding-left: 25px;
+	border: solid 2px silver;
+	border-radius: 25px;
+}
+.searchform button {
+	width: 43px;
+	height: 43px;
+	position: absolute;
+	border: none;
+	border-radius: 50%;
+	top: 4px;
+	right: 1.5px;
+	cursor: pointer;
+	font-size: 16px;
+	background-color: white;
+}
+.searchform button:hover {
+	color: dodgerblue;
+}
+/*The Navbar Menu*/
+.menu {
+	width: 438px;
+	height: 20px;
+	margin: 55px 10px 0 0;
+	padding: 10px;
+	border-radius: 15px;
+	background-color: white;
+	float: right;
+}
+.menu ul{list-style: none;}
+.menu ul li{display: inline-block;}
+.menu ul li a{
+	text-decoration: none;
+	color: black;
+	padding: 0 20px;
+	transition: 0.5s;
+	font-family: 'Roboto', sans-serif;
+}
+.menu ul li a:hover {
+	color: deepskyblue;
+	transition: 0.5s;
+}
+/*TopButton*/
+#myBtn {
+	width: 75px;
+	height: 75px;
+	display: none;
+	position: fixed;
+	bottom: 86px;
+	left: 226px;
+	z-index: 100;
+	font-size: 18px;
+	border: none;
+	outline: none;
+	border-radius: 50%;
+	background-color: deepskyblue;
+	color: white;
+	cursor: pointer;
+	transition: 0.5s;
+	box-shadow: 0px 4px 13px -2px rgba(0,0,0,0.76);
+}
+
+#myBtn:hover {
+	background-color: blue;
+	transition: 0.5s;
+}
+
+/*Landing*/
+.landing {
+	width: 1921px;
+	height: 988px;
+	position: relative;
+	background-color: skyblue;
+	margin: 0 auto;
+	z-index: 100;
+}
+.mainimg {
+	width: 871px;
+	height: 606px;
+	position: absolute;
+	top: 206px;
+	left: 169px;
+	border: solid 16px white;
+	background-color: silver;
+	animation-iteration-count: infinite;
+	box-shadow: 1px 11px 26px 3px rgba(0,0,0,0.29); 
+}
+.mainimg img{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	object-position: top;
+}
+.landingtext {
+	width: 585px;
+	height: 670px;
+	float: right;
+	padding: 300px 137px 0 395px;
+	margin: 19px 19px 0 0;
+	background-color: #ffffff;
+}
+.landingtext h3 {
+	font-family: 'Hind', sans-serif;
+	color: blueviolet;
+}
+.landingtext h1 {
+	font-size: 48px;
+	margin-top: 30px;
+}
+.landingtext p {
+	font-size: 24px;
+	margin-top: 52px;
+	font-family: 'Arial', "sans-serif";
+}
+.landingtext h2 {
+	font-size: 24px;
+	margin-top: 65px;
+	color: lightskyblue;
+	text-transform: uppercase;
+	font-family: 'Raleway', sans-serif;
+}
+
+/*Category*/
+.category {
+	width: 1885px;
+    height: 1475px;
+	margin: 0 auto;
+	background-color: #ffffff;
+}
+/*Title*/
+.titlebox {
+	width: 100%;
+	height: 220px;
+	text-align: center;
+}
+.titlebox h1{
+	font-size: 40px;
+	padding-top: 95px;
+}
+.line {
+	width: 61px;
+	height: 3px;
+	margin: 0 auto;
+	margin-top: 31px;
+	box-shadow: -0.1px 2px 9px 0 rgba(115, 77, 242, 0.57);
+	background-color: #734df2;
+}
+/*Group*/
+.contents {
+	width: 1200px;
+	height: 1080px;
+	margin: 0 auto;
+}
+.contype1 {
+	width: 370px;
+	height: 505px;
+	float: left;
+	margin: 15px 15px;
+	transition: 0.5s;
+	border-radius: 10px;
+	background-color: white;
+	box-shadow: 0px 10px 16px 1px rgba(0,0,0,0.46);
+}
+.contype2 {
+	width: 770px;
+	height: 505px;
+	float: left;
+	margin: 15px 15px;
+	transition: 0.5s;
+	border-radius: 10px;
+	background-color: white;
+	box-shadow: 0px 10px 16px 1px rgba(0,0,0,0.46);
+}
+.cons:hover {
+	transition: 0.5s;
+	transform: scale(1.03);
+	box-shadow: 0px 8px 38px 9px rgba(0,0,0,0.28);
+}
+.conimg {
+	width: 370px;
+	height: 282.5px;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	background-color: silver;
+}
+.conimg img{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	object-position: top;
+}
+.conimg2 {
+	width: 407px;
+	height: 505px;
+	float: right;
+	border-top-right-radius: 10px;
+	border-bottom-right-radius: 10px;
+	background-color: silver;
+}
+.linkbox {
+	width: 500px;
+	height: 80px;
+	margin: 0 auto;
+	margin-top: 60px;
+	font-family: Raleway;
+	font-size: 18px;
+	text-align: center;
+}
+.linkbox a:hover {color: darkturquoise;}
+
+.testi {
+	width: 1885px;
+    height: 962px;
+	margin: 0 auto;
+	background-color: whitesmoke;
+}
+.comment {
+	width: 1206px;
+	height: 337px;
+	margin: 0 auto;
+}
+.combox {
+	width: 258px;
+	height: 337px;
+	float: left;
+	margin: 0 17px;
+	transition: 0.5s;
+	text-align: center;
+	padding: 0 55px;
+	background-color: white;
+	border-top-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+	box-shadow: 0px 8px 17px 2px rgba(0,0,0,0.2);
+}
+.combox:hover {
+	transition: 0.5s;
+	transform: scale(1.03);
+	box-shadow: 0px 8px 38px 9px rgba(0,0,0,0.28);
+}
+.potrait {
+	width: 90px;
+	height: 90px;
+	margin: 0 auto;
+	margin-top: 45px;
+	background-color: aquamarine;
+	border-radius: 50%;
+}
+.potrait img{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	object-position: top;
+	border-radius: 50%;
+}
+.linesm {
+	width: 43px;
+	height: 3px;
+	margin: 18px 107px 25px 107px;
+	background-color: #e0e0e0;
+}
+.combox h3 {
+	margin-top: 33px;
+	text-transform: uppercase;
+	font-family: 'Raleway', sans-serif;
+}
+.combox p {
+	font-size: 14px;
+	text-align: center;
+	font-family: 'Arial', "sans-serif";
+}
+.brand {
+	width: 1100px;
+	height: 125px;
+	margin: 0 auto;
+	margin-top: 136px;
+}
+.brand img {height: 125px;}
+
+/*SignInPage*/
+.signup {
+	width: 1920px;
+	height: 276px;
+	color: white;
+	background-color: #0F2D8A;
+	font-family: 'Raleway', sans-serif
+}
+.signup h1{
+	float: left;
+	font-size: 30px;
+	font-weight: bold;
+	font-stretch: normal;
+	font-style: normal;
+	line-height: 0.93;
+	letter-spacing: 1.05px;
+	padding: 124px 0 0 443px;
+}
+.signup form {
+	float: right;
+}
+.signup input{
+	float: right;
+	width: 342px;
+	height: 58px;
+	margin: 105px 0 0 0;
+	padding-left: 32px;
+	box-shadow: -0.9px 13px 27px 0 rgba(0, 0, 0, 0.18);
+	background-color: #ffffff;
+	border-top-left-radius: 10px;
+	border-bottom-left-radius: 10px;
+}
+.signup button{
+	color: white;
+	float: right;
+	width: 160px;
+	height: 63px;
+	margin: 105px 444px 0 0;
+	border-radius: 1.6px;
+	box-shadow: -0.9px 13px 27px 0 rgba(0, 0, 0, 0.18);
+	background-color: #ec376c;
+}

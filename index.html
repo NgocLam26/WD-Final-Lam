@@ -1,0 +1,157 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+	<link rel="stylesheet" href="CSS/styles.css" type="text/css">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet"> 
+<!--https://fonts.google.com/specimen/Roboto?query=roboto&sidebar.open=true&selection.family=Roboto:wght@500-->
+	<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+<!--https://fonts.google.com/specimen/Pacifico?query=paci&sidebar.open=true&selection.family=Pacifico-->
+	<link href="https://fonts.googleapis.com/css2?family=Hind&display=swap" rel="stylesheet">
+<!--https://fonts.google.com/specimen/Hind?sidebar.open=true&selection.family=Hind-->
+	<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet">
+<!--https://fonts.google.com/specimen/Raleway?query=ral&sidebar.open=true&selection.family=Raleway:wght@500-->
+	<script src="https://kit.fontawesome.com/591c08707b.js" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+
+<body>
+<!--	Navbar-->
+	<div class="navbar">
+		<div class="logobox"><span>S</span>mart News</div>
+		<div class="searchform">
+			<input type="text" placeholder="Search.." name="search">
+			<button type="submit"><i class="fas fa-search"></i></button>
+		</div>
+		<div class="menu">
+			<ul>
+				<li><a href="#home">Home</a></li>
+				<li><a href="#show">About</a></li>
+				<li><a href="#post">Post</a></li>
+				<li><a href="#contact">Contact</a></li>
+				<li><a href="#">Other</a></li>
+			</ul>
+		</div>
+	</div>
+	
+	<button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fas fa-chevron-up"></i></button>
+	
+<!--	Contents-->
+	<div id="box">
+		
+		<div class="landing" id="home">
+			<div class="mainimg animate__animated animate__pulse">
+				<img src="IMG/LandingIMG.jpg" alt="Mainimg">
+			</div>
+			<div class="landingtext">
+				<h3>15 December, 2020</h3>
+				<h1>Wondering The Fascinating</h1>
+				<p>Hey, my name is Lam and I am an Designer with 10+ years experience in Graphic Designing.</p>
+				<h2>Crafting / Art</h2>
+			</div>
+		</div>
+		
+		<div class="category" id="show">
+			<div class="titlebox">
+				<h1>Recent News</h1>
+				<div class="line"></div>
+			</div>
+			
+			<div class="contents">
+				<div class="contype1 cons">
+					<div class="conimg"></div>
+				</div>
+				<div class="contype2 cons">
+					<div class="conimg2"></div>
+				</div>
+				<div class="contype1 cons">
+					<div class="conimg"></div>
+				</div>
+				<div class="contype1 cons">
+					<div class="conimg"></div>
+				</div>
+				<div class="contype1 cons">
+					<div class="conimg"></div>
+				</div>
+			</div>
+			
+			<div class="linkbox">
+				<p>Interested in more? <a href="#show">Load More Stories</a></p>
+			</div>
+		</div>
+		
+		<div class="testi" id="post">
+			<div class="titlebox">
+				<h1>Newest Comments</h1>
+				<div class="line"></div>
+			</div>
+			<div class="comment">
+				<div class="combox">
+					<div class="potrait">
+						<img src="IMG/Cr1tikal.jpg" alt="People1">
+					</div>
+					<h3>Charles White Jr.</h3>
+					<div class="linesm"></div>
+					<p>Cake or pie? I can tell a lot about you by which one you pick. It may seem silly, but cake and pie people are really different</p>
+				</div>
+				<div class="combox">
+					<div class="potrait">
+						<img src="IMG/keanu-reeves.jpg" alt="People2">
+					</div>
+					<h3>Keanu Reeves</h3>
+					<div class="linesm"></div>
+					<p>Colors bounced around. They mixed and threaded themselves together. Even colors that had no business being together. That's the way.</p>
+				</div>
+				<div class="combox">
+					<div class="potrait">
+						<img src="IMG/MoriCalli.jpg" alt="People3">
+					</div>
+					<h3>Mori Calliope</h3>
+					<div class="linesm"></div>
+					<p>Eating raw fish didn't sound like a good idea. "It's a delicacy in Japan," didn't seem to make it any more appetizing. Raw fish is raw fish, delicacy or not.</p>
+				</div>
+			</div>
+			<div class="brand">
+				<img src="IMG/Arena.png" alt="Arena" style="float: left">
+				<img src="IMG/Oikya_Front_Logo.png" alt="Oikya" style="float: left; margin-left: 60px;">
+				<img src="IMG/Eucerin-logo.png" alt="Eu" style="float: right">
+				<img src="IMG/facebook_logos_PNG19754.png" alt="Facebook" style="float: right; margin-right: 90px;">
+			</div>
+		</div>
+		
+		<div class="signup" id="contact">
+			<h1>Sign Up For Our Newsletter:</h1>
+			<form>
+				<button type="submit">Subscribe</button>
+				<input type="text" id="Sign" name="Sign" placeholder="Your email Address...">
+			</form>
+		</div>
+		
+	</div>
+	
+	<script>
+		//Get the button
+		var mybutton = document.getElementById("myBtn");
+
+		// When the user scrolls down 20px from the top of the document, show the button
+		window.onscroll = function() {scrollFunction()};
+
+		function scrollFunction() {
+		  if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 20) {
+			mybutton.style.display = "block";
+		  } else {
+			mybutton.style.display = "none";
+		  }
+		}
+
+		// When the user clicks on the button, scroll to the top of the document
+		function topFunction() {
+		  document.body.scrollTop = 0;
+		  document.documentElement.scrollTop = 0;
+		}
+	</script>
+</body>
+</html>
